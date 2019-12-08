@@ -1,15 +1,28 @@
 <!DOCTYPE html>
-<html onclick="console.log(getCoords())">
+<html onclick>
 
 <head>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script src="main.js"></script>
 </head>
 
-<body onclick="getCoords()"></body>
+<body onclick="getCoords()">
+	<div id="Hitbox1" class="square" onclick="console.log('test')">thrlljh
+		ytryhr</div>
+</body>
 
 </html>
 <style>
+	.square {
+		height: 40px;
+		width: 39px;
+        opacity: 0;
+		position: relative;
+		top: 57px;
+		left: 30px;
+		background-color: #555;
+	}
+
 	body {
 		background-image: url('https://github.com/JesterOrNot/Risk2.0/blob/master/assets/Risk_board.png?raw=true');
 		background-repeat: no-repeat;
