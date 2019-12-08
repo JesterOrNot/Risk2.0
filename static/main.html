@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html onclick="console.log(getCoords())">
 
 <head>
 	<link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="main.js"></script>
+	<script src="main.js"></script>
 </head>
-<body onclick="console.log('Hello')"></body>
+
+<body onclick="getCoords()"></body>
+
 </html>
 <style>
-body {
-  background-image: url('https://github.com/JesterOrNot/Risk2.0/blob/master/assets/Risk_board.png?raw=true');
-  background-repeat: no-repeat;
-}
+	body {
+		background-image: url('https://github.com/JesterOrNot/Risk2.0/blob/master/assets/Risk_board.png?raw=true');
+		background-repeat: no-repeat;
+	}
 </style>
+<script>
+	function getCoords() {
+    console.log(event.clientX + " " + event.clientY);
+}
+</script>
