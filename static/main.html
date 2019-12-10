@@ -1,5 +1,31 @@
 <!DOCTYPE html>
-<html onclick>
+<html>
+
+<head>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-analytics.js"></script>
+
+	<script>
+		// Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA36BcWNW-HoxHp9ddLGYK9G7f8GBiZk1U",
+    authDomain: "risk-two.firebaseapp.com",
+    databaseURL: "https://risk-two.firebaseio.com",
+    projectId: "risk-two",
+    storageBucket: "risk-two.appspot.com",
+    messagingSenderId: "703485556456",
+    appId: "1:703485556456:web:15776390176cee1782fb5d",
+    measurementId: "G-QDPP009NEX"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+	</script>
+</head>
 
 <body>
 	<div id="AlaskaHitBox" onclick="console.log('Alaska')">thrlljh

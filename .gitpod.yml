@@ -12,3 +12,6 @@ ports:
     onOpen: open-preview
 tasks:
   - init: npm install && node index.js
+    name: Split Terminal
+  - openMode: split-right
+    command: echo open
