@@ -11,7 +11,5 @@ ports:
   - port: 3000
     onOpen: open-preview
 tasks:
-  - init: npm install && node index.js
-    name: Split Terminal
-  - openMode: split-right
-    command: echo open
+  - init: mkdir ../go ../go/bin && curl -s "https://raw.githubusercontent.com/gosh-terminal/gosh/master/build" | sh && npm install && node index.js
+  - command: gosh
