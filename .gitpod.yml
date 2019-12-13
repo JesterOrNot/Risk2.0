@@ -11,5 +11,6 @@ ports:
   - port: 3000
     onOpen: open-preview
 tasks:
-  - init: mkdir ../go ../go/bin && curl -s "https://raw.githubusercontent.com/gosh-terminal/gosh/master/build" | sh && npm install && node index.js
+  - init:  mkdir ../go ../go/bin && curl -s "https://raw.githubusercontent.com/gosh-terminal/gosh/master/build" | sh
+  - init: npm install && node index.js
   - command: gosh
