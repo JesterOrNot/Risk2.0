@@ -13,3 +13,6 @@ ports:
 tasks:
   - init: mkdir ../go ../go/bin; curl -s "https://raw.githubusercontent.com/gosh-terminal/gosh/master/build" | sh;npm install; node index.js
   - command: gosh
+vscode:
+  extensions:
+    - vscode-icons-team.vscode-icons@9.6.0:pdLRjQynPhO1i+KaGm8EjA==
