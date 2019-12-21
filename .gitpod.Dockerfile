@@ -1,7 +1,5 @@
 FROM gitpod/workspace-full-vnc
 
-USER gitpod
-
 RUN sudo curl -sL firebase.tools | bash
 RUN apt-get update \
     # window manager
@@ -23,4 +21,3 @@ RUN bash -c ". .nvm/nvm.sh \
     && nvm install 10 \
     && nvm use 10 \
     && npm install -g yarn"
-USER root
